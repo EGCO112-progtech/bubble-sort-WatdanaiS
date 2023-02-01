@@ -2,17 +2,16 @@
 #include <stdlib.h>
 #include "sorting.h"
 
-int main(int argc ,char **argv[]) {
-int i,*a,n,j;
+int main(int argc ,char **argv) {
+int i,*a,n,j=0;
+int *prime=(int*)malloc(sizeof(int)*n);
   n=argc-1;
   a=(int*)malloc(sizeof(int)*n);
-  int i,j=0;
   for(i=0;i<n;i++) {
     a[i]=atoi(argv[i+1]);
       if(IsPrime(a[i])){
         prime[j]=a[i];
         j++;
-        
       }
     }
 
@@ -25,7 +24,6 @@ int i,*a,n,j;
 
   // selectionSort(a,N);
   display(prime,n);
- return 0;
 }
-
+  return 0;
 }

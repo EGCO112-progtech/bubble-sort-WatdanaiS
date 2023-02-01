@@ -40,31 +40,32 @@ int i,j;
 int sorted;
 // how may pair to compare?
 for(i=0;i<n-1;i++){
-  printf("ROUND %d\n", i);
-  sorted=0;
+  printf("ROUND %d\n",i);
+  sorted=1;
   for(j=0;j<n-1-i;j++){
-    if(a[j] > a[j+1])
+    if(a[j]>a[j+1])
     {
-     swap(&a[j], &a[j+1]);
-      sorted=1;
+     swap(&a[j],&a[j+1]);
+      sorted=0;
      }
      display(a,n);
     }
-  if(sorted==0) break;
+  //if(sorted==0) break;
   }
 
-  printf("Result\n");
+ // printf("Result\n");
 }
 
-void IsPrime(int a[n])
+int IsPrime(int a)
 {
-  int prime[], a, i;
-  for(i=2; i<=n; i++) {
-    if(a[n]%i!=0 || a[n]!=1 || a[n]!=0){
-      prime[n]=a[n];
-      }
-    }
-    return prime[n]
+  int p=0, i;
+    for(i=1;i<=a;i++){
+        if(a%i==0) p++;  
+        }
+    if(p==2)
+      return 2;
+  
+      return 0;
 }
 
 
