@@ -40,7 +40,6 @@ int i,j;
 int sorted;
 // how may pair to compare?
 for(i=0;i<n-1;i++){
-  printf("ROUND %d\n",i);
   sorted=1;
   for(j=0;j<n-1-i;j++){
     if(a[j]>a[j+1])
