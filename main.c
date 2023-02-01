@@ -21,7 +21,6 @@ int *prime=(int*)malloc(sizeof(int)*n);
    display(prime,n);
   bubbleSort(prime,n); 
    //insertion(a,N);
-
   // selectionSort(a,N);
   display(prime,n);
 }
