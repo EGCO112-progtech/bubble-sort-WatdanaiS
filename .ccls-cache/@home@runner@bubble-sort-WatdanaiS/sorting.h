@@ -10,11 +10,14 @@ void display(int a[],int n){
   
 }
 
-void selectionSort(int data[], int length) 
-{ 
-	int i, j, m, mi; 
-	
-     display(data,length);
+void selectionSort(int a[], int l){ 
+	int i, j, t, m, mi;
+    // display(a,l);
+  for(i=0;i<l;i++){
+    if(a[i]<a[i+1]){
+      
+    }
+  }
      
 	
 } 
